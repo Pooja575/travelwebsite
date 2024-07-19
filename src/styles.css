@@ -1,0 +1,13 @@
+/* Updated CSS */
+.header {
+    height: 350px;
+    background-image: url('./images/hero-image.jpg'); /* Path adjusted relative to the CSS file */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
