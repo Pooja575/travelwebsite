@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles.css'; // Adjusted import path
 
 function BookingForm() {
     const [name, setName] = useState('');

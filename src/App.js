@@ -1,32 +1,43 @@
 import React from 'react';
+import './styles.css';
 import Header from './components/Header';
 import BookingForm from './components/BookingForm';
 import HotelList from './components/HotelList';
 import RealTimeAvailability from './components/RealTimeAvailability';
-import './styles.css';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 function App() {
     return (
-        <div>
+        <>
             <Header />
+            <nav>
+                <a href="#about-us">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="#booking-form">Book Now</a>
+                <a href="#hotels">Available Hotels</a>
+                <a href="#availability">Real-Time Availability</a>
+            </nav>
             <main>
-                <div className="button-container">
-                    <a href="#about" className="button">About Us</a>
-                    <a href="#contact" className="button">Contact Us</a>
-                </div>
-                <section id="about" className="button-component">
-                    <h2>About Us</h2>
-                    <p>Information about us...</p>
+                <section id="hotels">
+                    <HotelList />
                 </section>
-                <section id="contact" className="button-component">
-                    <h2>Contact Us</h2>
-                    <p>Contact details...</p>
+                <section id="booking-form">
+                    <BookingForm />
                 </section>
-                <BookingForm />
-                <HotelList />
-                <RealTimeAvailability />
+                <section id="availability">
+                    <RealTimeAvailability />
+                </section>
+                <section id="about-us">
+                    <AboutUs />
+                </section>
+                <section id="contact-us">
+                    <ContactUs />
+                </section>
             </main>
-        </div>
+            <Footer />
+        </>
     );
 }
 

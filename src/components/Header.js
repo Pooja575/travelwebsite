@@ -1,10 +1,10 @@
 import React from 'react';
-
+import '../styles.css'; // Adjusted import path
 
 function Header() {
     return (
-        <header className="header">
-            <h1>Your Website Title</h1>
+        <header>
+            <h1>Travel-Stay Website</h1>
         </header>
     );
 }

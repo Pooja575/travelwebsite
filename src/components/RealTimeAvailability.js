@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles.css'; // Adjusted import path
 
 function RealTimeAvailability() {
     return (
